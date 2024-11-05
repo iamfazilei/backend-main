@@ -1,0 +1,428 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+#class-details body {
+    font-family: "Inter", sans-serif;
+    background-color: hsl(0, 0%, 100%);
+}
+#class-details{
+margin: 0 10%;
+padding: 2%;
+width:90%;
+}
+#class-details .main-content {
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  margin: 0 0 0 10%;
+  box-sizing: border-box;
+  padding: auto;
+}
+
+#class-details .class-content-container {
+    padding: 2%;
+}
+
+#class-details .header-img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; 
+    object-fit: cover; 
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+#class-details .header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #3C2A5D;
+    border-radius: 15px;
+    height: 50%;
+    padding: 10px;
+    margin: 0;
+
+    width:100%;
+}
+
+#class-details .back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 85px;
+}
+
+.back-btn img {
+    width: 20px;
+    height: auto;
+}
+
+#class-details .title-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 50%;
+    
+}
+
+#class-details .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    text-align: start;
+}
+
+#class-details .divider {
+    margin: 16px 0;
+    border: 2px solid #DA8FF9;
+    margin-top: 10px;
+    width: 50%;
+} 
+
+
+#class-details .activity-icon, #class-details .quiz-icon, #class-details .exam-icon {
+    margin-right: 10px;
+    width: 25px;
+    height: auto;
+}
+
+
+#class-details .assessments {
+    margin-top: 24px;
+    margin: 4% 0;
+
+    width: 100%;
+}
+
+#class-details .subheading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #BA68C8;
+    text-align: start;
+    margin: 0 1%;
+}
+
+#class-details .assessment-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+#class-details .assessment-btn {
+    text-align: left;
+    border: 2px solid #7E57C2;
+    color: #BA68C8;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-bottom: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#class-details .assessment-btn:hover {
+    color: #fff;
+    background-color: #7E57C2;
+}
+
+#class-details .description,  
+#class-details .class-code,
+#class-details .student-enroll {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align:left;
+}
+.student-enroll {
+    margin: auto 2%;
+}
+
+#class-details .title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#class-details .title-container {
+  flex-grow: 1;
+  padding-right: 10px; /* Add padding for spacing next to settings button */
+}
+
+#class-details .settings-btn {
+  position: absolute;
+  right: 0; /* Position the button at the end of the row */
+  background-color: transparent;
+  border: none;
+  color: #BA68C8;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem; /* Small icon size */
+}
+
+.settings-btn img {
+  width: 20px; /* Smaller icon size */
+  height: 20px;
+}
+
+
+
+  
+#class-details .join-class {
+    background-color: #3C2A5D;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0 0 -14%;
+    width: 116%;
+    height: auto;
+    justify-content: start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #class-details .join-class label {
+    display: block;
+    color:#BA68C8;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+
+  
+  }
+  #class-details .regtext {
+    margin: 0 30% 10px 0;
+    color: #ffffff !important;
+    text-align: left;
+    font-weight: bold;
+  }
+  #class-details .cd-input-group {
+    display: flex;
+    border: 2px solid #DA88F9;
+    border-radius: 10px; 
+    padding: 10px;
+    width: 95%;
+    overflow: hidden; 
+  }
+  #class-details  .cd-input-group input {
+    flex: 1;
+    padding: 10px;
+    border: none; 
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px 0 0 5px ;
+  }
+  #class-details  .center-btn{
+    text-align: center;
+    background-color: #BA68C8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 20%;
+    margin: 0 0 4% 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #class-details .input-group button:hover {
+    background-color: #a144cd;
+  }
+  
+#class-details h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#class-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#class-details ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selected-students {
+  display: flex;
+  margin: 15px;  
+  align-items: center;
+}
+
+.selected-students span {
+  margin-right: 10px;
+  color: #ffff;
+}
+#class-details .remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#class-details .remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+#class-details .error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.form-group {
+  width: 101%;
+  margin-bottom: 20px;
+}
+
+#class-details .back-to-classdeets {
+  background-color: #BA68C8;
+  color: #fff !important;
+  border: none;
+  border-radius: 25px !important;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 5%;
+}
+
+#class-details .back-to-classdeets:hover {
+    background-color:#a754b6 !important;
+  }
+  
+
+
+  #class-details .create-btn  {
+    text-align: left;
+    background-color: transparent;
+    border: 2px solid #7E57C2;
+    color: #BA68C8;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; 
+    margin: 0 auto; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+    width: 100%;
+}
+#class-details .create-btn:hover {
+    background-color: #7E57C2 !important;
+    color: #FFFFFF;
+}
+
+#class-details .enrolled-students-table {
+  margin-top: 30px;
+  background: linear-gradient(to right, #4e3579, #7E57C2);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#class-details .enrolled-students-table th,
+#class-details .enrolled-students-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+#class-details .enrolled-students-table th {
+  text-align: center;
+  color: white;
+  border: none;
+}
+
+#class-details .enrolled-students-table td {
+  text-align: center;
+  background-color: #5B4C76;
+  color: white;
+  border: 5px solid #3C2A5D;
+  border-left: none;
+  border-right: none;
+}
+
+#class-details .enrolled-students-table .remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#class-details .enrolled-students-table .remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+
+
+@media (max-width: 768px) {
+
+  #class-details{
+    margin: 10% 5%;
+    padding: 0;
+    width:90%;
+    }
+    #class-details .class-content-container {
+        width: 750px;
+        max-width: 100%;
+    }
+
+    #class-details .create-btn {
+        width: 100%;
+        margin: 5% 0; 
+    }
+
+    #class-details .join-class {
+     
+      margin: 10px 0 0 -5%;
+      width: 110%;
+      height: auto;
+      justify-content: start;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    #class-details .center-btn {
+      width: 70%;
+      border-radius: 25px;
+      justify-content: center;
+      margin: 0 5% 10%;
+      display: flex; /* if you want the content inside the button centered as well */
+  }
+  #class-details .back-to-classdeets{
+    width: 70%;
+    border-radius: 25px;
+    justify-content: center;
+    margin: 5% -5%;
+    display: flex;
+  }
+  
+  #class-details .enrolled-students-table th,
+  #class-details .enrolled-students-table td {
+    padding: 8px 10px;
+  }
+  .form-group {
+    margin-bottom: 0px;
+    margin: 5% 0;
+    width: 97%;
+  }
+}
+

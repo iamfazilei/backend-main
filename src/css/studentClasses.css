@@ -1,0 +1,139 @@
+/* Container and Main Content */
+#student-classes .container {
+  display: flex;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+#student-classes .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#student-classes .error {
+  color: red;
+  font-weight: bold;
+}
+
+#student-classes .section {
+  margin-bottom: 20px;
+}
+#student-classes .colored {
+  margin-left: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:#482c79;
+  text-align: start;
+}
+
+
+
+#student-classes .regtext {
+  margin:0 0 2% 0;
+  color: #ffffff !important;
+  text-align: start;
+}
+#student-classes .join-class {
+  background-color: #482c79;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 110%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#student-classes .join-class label {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+
+}
+#student-classes .input-group {
+  display: flex;
+  border: 2px solid #DA88F9;
+  border-radius: 10px; 
+  padding: 10px;
+  width: 100%;
+  overflow: hidden; 
+}
+
+
+#student-classes .input-group input {
+  flex: 1;
+  padding: 10px;
+  border: none; 
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px 0 0 5px ;
+}
+
+
+#student-classes .input-group button {
+  background-color: #BA68C8;
+  color: white;
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 0px 5px 5px 0 ;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#student-classes .input-group button:hover {
+  background-color: #a144cd;
+}
+
+#student-classes .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#student-classes .card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  
+}
+
+#student-classes .card:hover {
+  transform: scale(1.05);
+}
+
+#student-classes .card-content {
+  padding: 20px;
+}
+
+#student-classes .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#student-classes .card-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#student-classes .icon-image {
+  width: 20px;
+  height: 20px;
+}
+
+
+#student-classes .no{
+  text-align: start;
+  margin: 0 3%;
+}
+
+
+
+
+

@@ -1,0 +1,252 @@
+#quiz-overview * {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: start;
+}
+
+#quiz-overview body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#quiz-overview .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#quiz-overview .title-container {
+    background-color: #4f2b7a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-overview .title-container .quiz-title-container {
+    margin-bottom: 10px;
+}
+
+#quiz-overview .title-container .quiz-title {
+    font-size: 2rem;
+}
+
+#quiz-overview .content-container .time-limit {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 10px 5px 10px 0!important;
+    color: #DA88F9;
+}
+
+#quiz-overview .content-container {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-overview .content-container .greeting {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#quiz-overview .content-container .reminder {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#quiz-overview .content-container .start-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #BA68C8;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-overview .content-container .start-btn:hover {
+    background-color: #8240c8;
+}
+
+#quiz-overview .quiz-section {
+    background: linear-gradient(90deg, rgba(60,41,92,1) 0%, rgba(126,87,194,1) 100%);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-overview .quiz-section h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#quiz-overview .quiz-section h3 {
+    margin-bottom: 20px;
+}
+
+#quiz-overview .quiz-section p {   
+    font-size: 1rem;
+}
+
+#quiz-overview hr {
+    border: 1px solid #DA88F9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#quiz-overview .question-card {
+    background-color: #4f2b7a;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-overview .question-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+#quiz-overview .options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between radio buttons */
+}
+
+#quiz-overview .radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; /* Adjust font size */
+    color: #c2a9f0; /* Light purple for text */
+    position: relative;
+    cursor: pointer;
+}
+
+#quiz-overview .radio-label input[type="radio"] {
+    appearance: none; /* Remove default radio button */
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #BA68C8; /* Border of the radio button */
+    background-color: #8e509a;
+    border-radius: 50%; /* Make it circular */
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-overview .radio-label input[type="radio"]:checked {
+    background-color: #ffffff;   /* Background color when selected */
+    border-color: #ffffff; /* Keep the border same as background */
+}
+
+#quiz-overview .radio-label input[type="radio"]:checked::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white; /* White inner circle */
+    border-radius: 50%;
+}
+
+#quiz-overview .radio-label span {
+    flex-grow: 1;
+    position: relative;
+    padding-left: 0px;
+    padding: 10px;
+    border-bottom: 1px solid #c2a9f0; /* Underline each option */
+}
+
+#quiz-overview .submit-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#quiz-overview .submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #BA68C8;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-overview .submit-btn:hover {
+    background-color: #8240c8;
+}
+
+/* Custom styles for the modal */
+.modal {
+    z-index: 1050; /* Bootstrap default z-index for modals */
+    margin-top: 100px; /* Adjust this value to lower the modal */
+
+  }
+  
+  .modal-backdrop {
+    z-index:1040; /* Bootstrap default z-index for modal backdrop */
+  }
+  
+
+.modal-header {
+  background-color: #f8f9fa;
+}
+
+.modal-title {
+  color:#4f2b7a;
+}
+
+.modal-body {
+  font-size: 16px;
+}
+
+.modal-footer .btn-primary {
+  background-color: #8240c8;
+  border-color: #8240c8;
+}
+
+.modal-footer .btn-primary:active {
+  background-color: #5a2a8a; /* Change to your desired color */
+  border-color: #5a2a8a; /* Change to your desired color */
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+.modal-footer .btn-secondary:active {
+    background-color: #454a4e;
+    border-color:  #454a4e;
+}
+
+#quiz-overview .back-btn img {
+  width: 20px;
+  height:20px;
+    filter: invert(13%) sepia(76%) saturate(7486%) hue-rotate(268deg) brightness(90%) contrast(104%);
+  }
+  #quiz-overview .back-btn {
+    font-size: 15px;
+display: flex; 
+margin-bottom: 1%;
+ }
+ /*
+#quiz-overview .back-btn span {
+  margin-left: 0;
+  color: #4f2b7a;
+  font-size: 1.1rem;
+  font-weight: bold;
+} */

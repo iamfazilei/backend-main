@@ -1,0 +1,247 @@
+#create-activity .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0%;
+}
+
+
+h2{ 
+  color: #7E57C2;
+  text-align: left; /* Aligns text to the left */
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 0%;
+  padding: 2%;
+}
+
+
+#create-activity p {
+  color: #7E57C2;
+  text-align: left; /* Aligns text to the left */
+  font-size: 1rem;
+  margin-left: 0%;
+  padding: 1%;
+}
+
+#create-activity label, 
+#create-activity input {
+  text-align: left;
+}
+
+#create-activity .btn-group {
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  margin: 0 0%;
+  padding: 0;
+}
+
+#create-activity .icon-group {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  /* padding-right: 20px; */
+  margin: 0;
+  gap: 10px;
+}
+
+#create-activity .btn-primary {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 17px;
+  color: #BA68C8;
+  border-radius: 25px;
+  border: 2px solid #7E57C2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px; /* Reduced padding for a flatter appearance */
+  height: 50px; /* Explicit height to control button's height */
+  transition: background-color 0.2s;
+}
+
+#create-activity .btn-primary:hover {
+  background-color: #7E57C2;
+  color: #fff;
+}
+
+
+
+#create-activity .btn-primary-icon {
+  margin-right: 8px;
+  height: auto;
+  width: 20px;
+}
+
+#create-activity .btn-icon-edit,
+#create-activity .btn-icon-preview {
+  background-color: transparent;
+  border: 2px solid #7E57C2;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 5px;
+  transition: background-color 0.2s;
+}
+
+#create-activity .btn-icon-edit img, 
+#create-activity .btn-icon-preview img {
+  width: 60%;
+  height: 60%;
+}
+
+#create-activity .btn-icon-preview img {
+  padding-top: 4px;
+}
+
+#create-activity .btn-icon-edit img {
+  padding-left: 7px;
+  padding-bottom: 2px;
+}
+
+#create-activity .btn-icon-preview:hover,
+#create-activity .btn-icon-edit:hover {
+  background-color: #7E57C2;
+}
+
+#create-activity .back-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+}
+
+#create-activity .back-btn img {
+  filter: invert(13%) sepia(76%) saturate(7486%) hue-rotate(268deg) brightness(90%) contrast(104%);
+}
+
+.btn-primary.active,
+.btn-icon-preview.active,
+.btn-icon-edit.active {
+  background-color: #7E57C2 !important;
+  color: white !important;
+}
+
+.btn-delete{
+  border: none !important;
+  padding: 5px 10px;
+  cursor: pointer;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+}
+
+.btn-delete img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #create-activity {
+      margin: 5% 4%;
+      padding: 0;
+      width: 90%;
+  }
+  
+  #create-activity .main-content {
+      width: 95%;
+  }
+
+  #create-activity .btn-group {
+      margin: 5% 0;
+       
+  }
+
+  #create-activity .icon-group {
+      /* justify-content: center; */
+      padding-right: 0;
+      margin: 2% 0;
+      gap: 5px;
+  }
+
+  #create-activity .back-btn {
+      padding: 8px 0;
+      margin-left: -5%;
+  }
+
+  .btn-delete{
+    border: none !important;
+    padding: 5px 0px;
+    cursor: pointer;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .btn-delete img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-add{
+    border: none !important;
+    padding: 5px 10px;
+    cursor: pointer;
+    align-items: center;
+    width: 50px;
+    height: 20px;
+  }
+
+  .settings-card{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px !important;
+  margin: 0 !important;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-card h2{
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.settings-card input {
+  font-size: small;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+}
+
+
+  /* Adjust button sizes for smaller screens */
+  #create-activity .btn-primary, #create-activity .btn-primary.active,
+  #create-activity .btn-icon-edit, 
+  #create-activity .btn-icon-preview {
+      width: 100%; /* Full-width buttons */
+      height: 40px;
+  }
+
+  #create-activity .btn-primary {
+      font-size: 15px;
+      padding: 8px 0;
+  }
+
+  #create-activity .btn-icon-edit, 
+  #create-activity .btn-icon-preview {
+      width: 35px;
+      height: 35px;
+  }
+}

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+#classes .main-content {
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  box-sizing: border-box;
+  padding: auto;
+  margin: 0 0 0 0;
+}
+p{
+  font-size: 1.2rem;
+  color: #FFF;
+  text-align: start;
+  margin: 0 0 2% 0;
+}
+#classes .classlist-card {
+    display: flex;
+    padding: 0.5rem 0 0 2rem;
+    align-items: left; 
+    border: solid 1px transparent;
+    border-radius: 10px;
+    height: 4rem;
+}
+
+#classes .welcome-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(0, 0%, 10%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+.card {
+    width: 240px; /* Set a fixed width for the card */
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.card-image-container {
+    font-size: 2em; 
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 25px 25px 0 0; 
+    height: 45%;
+    background-color: hsl(261, 100%, 80%);
+    font-size: 4.5rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+.card-image {
+    width: 100%; 
+    height: 50%; 
+}
+
+.card-content {
+    padding: 9rem 1rem 1rem 1rem; 
+    background-color: hsl(262, 47%, 55%);
+    border-radius: 25px;
+    box-shadow: 2px 3px 22px -10px rgb(48, 4, 63);
+    color: hsl(0, 0%, 100%);
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-text {
+    padding-top: 10px;
+    font-size: 12px;
+    display: flex; 
+    align-items: center;
+}
+
+.icon-image {
+    width: 16px; 
+    height: 16px; 
+    margin-right: 8px;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+
+
+
+#student-classes .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#student-classes .error {
+  color: red;
+  font-weight: bold;
+}
+
+#student-classes .section {
+  margin-bottom: 20px;
+}
+#student-classes .section h2 {
+  margin-left: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:#482c79;
+  text-align: start;
+}
+
+
+/* student classes */
+#classes .regtext {
+  margin:0 0 2% 0;
+  color: #ffffff !important;
+  text-align: start;
+}
+#classes .join-class {
+  background-color: #482c79;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0 50px 0;
+  width: 110%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#classes .join-class label {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+
+}
+#classes .input-group {
+  display: flex;
+  border: 2px solid #DA88F9;
+  border-radius: 10px; 
+  padding: 10px;
+  width: 100%;
+  overflow: hidden; 
+}
+
+
+#classes .input-group input {
+  flex: 1;
+  padding: 10px;
+  border: none; 
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px 0 0 5px ;
+}
+
+
+#classes .input-group button {
+  background-color: #BA68C8;
+  color: white;
+  border: none; 
+  padding: 10px 20px;
+  border-radius: 0px 5px 5px 0 ;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#classes .input-group button:hover {
+  background-color: #a144cd;
+}
+
+#classes .colored {
+  margin-left: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color:#482c79;
+  text-align: start;
+}
+
+#classes .section p {
+
+  text-align: start;
+}
+#classes .no{
+  text-align: start;
+  margin: 0 4%;
+}
+.class-initials-card {
+  width: 120px;
+  height:120px;
+  background-color: #f0f0f0;
+  border-radius:15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #482c79;
+  margin: 0 30px 0 10px;
+}
+
+
+
+/* student home */
+#classes .main-card {
+  display: flex;
+  padding-left: 5%;
+  align-items: center; 
+  border: solid 1px transparent;
+  border-radius: 10px;
+  height: 12rem;
+  margin: 0 0 4% 0;
+  width: 110%;
+  background: rgb(60,41,92);
+  background: linear-gradient(90deg, rgba(60,41,92,1) 0%, rgba(126,87,194,1) 100%);
+}
+#classes .welcome-title{
+  font-size: 50px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
+#classes .iz {
+  color: #BA68C8;
+}
+#classes .see-more-btn {
+  background-color: hsl(262, 47%, 55%);
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 50px 88% 0 0;
+  transition: background-color 0.2s;
+}
+
+#classes .see-more-btn:hover {
+  background-color: hsl(262, 39%, 45%);
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    #classes .container {
+      height: auto;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .home-user .main-content{
+      width: 350px !important;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+    }
+    /* #home-user .container {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+    } */
+  
+    #classes .card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+ 
+  
+  #home-user .see-more-btn {
+    width:20%;
+    margin: 5% 0 15% 0 !important;
+    padding: 2;
+  }
+  
+
+  #classes .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 125%;
+    max-width: 75rem !important; 
+    height: 100%; 
+    margin: 0;
+    /* padding: 0 15px;  */
+    box-sizing: border-box; 
+  }
+  
+  #classes .card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    box-sizing: border-box; 
+    padding: 1rem 1rem 1rem 9.5rem; 
+  
+  }
+  
+  #classes .card-image-container {
+  
+    border-radius: 25px 0 0 25px;
+    max-width: 35rem;
+    flex: 1;
+    height:100%;
+    width: 120px;
+    margin-right: 10px;
+    font-size: 35px;
+    padding: 45px 0 0 0;
+  }
+  
+  
+  }
+
+    
+  
+  

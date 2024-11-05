@@ -1,0 +1,15 @@
+.custom-toast .Toastify__toast-icon {
+    color: #794ac9 !important; /* Change the icon color */
+}
+
+.custom-toast .Toastify__progress-bar {
+    background: #8038fc; /* Change the progress bar color */
+}
+
+.Toastify__progress-bar--success {
+    background-color: #af83fa !important; /* Change this to your desired color */
+}
+
+.Toastify__zoom-enter {
+    color: #794ac9 !important; /* Change this to your desired color */
+}

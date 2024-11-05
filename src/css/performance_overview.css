@@ -1,0 +1,306 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.perfomance-container {
+    width: 87%;
+    margin: 0 0 55% 12%;
+    padding: 30px;
+    background-color: #3C2A5D !important;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#instructor-performance-ov .quiz-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid #DA88F9;
+    padding: 10px;
+}
+
+#instructor-performance-ov .image-container {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+#instructor-performance-ov .quiz-image {
+    width: 150px;
+    height: 150px;
+}
+
+#instructor-performance-ov .details-wrapper {
+    flex-grow: 1;
+}
+
+#instructor-performance-ov .quiz-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px 0 8px 0;
+    color: #fff;
+    text-align: start;
+}
+
+#instructor-performance-ov .date-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#instructor-performance-ov .date-wrapper .image {
+    margin: 0 1% 3% 5px;
+}
+
+#instructor-performance-ov hr {
+    border: 1px solid #DA88F9;
+}
+
+#instructor-performance-ov .due-date, #instructor-performance-ov .course-code {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#instructor-performance-ov .quiz-details {
+    color: #fff;
+    margin-top: 8px;
+}
+
+#instructor-performance-ov h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: start;
+}
+
+/* Performance Overview */
+
+#instructor-performance-ov .image-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#instructor-performance-ov .performance-icon {
+    margin: 1% 1% 2% 5px;
+}
+
+#instructor-performance-ov .chart {
+    width: 100%;             /* Take full width of parent */
+    max-width: 100%;         /* Prevents the container from overflowing */
+    height: auto;            /* Let height adjust automatically */
+    position: relative;      /* For potential positioning adjustments */
+    border: 2px solid #DA88F9;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+
+#instructor-performance-ov #performanceChart {
+    display: block;          /* Prevent inline canvas behavior */
+    width: 100%;             /* Ensure canvas scales with the container */
+    height: auto;            /* Allow height to adjust proportionally */
+}
+
+/* Student List */
+#instructor-performance-ov .student-list {
+    margin-top: 40px;
+}
+
+#instructor-performance-ov .student-list table {
+    margin-top: 30px;
+    background: linear-gradient(to right, #3C295C, #7E57C2);
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#instructor-performance-ov .student-list th, #instructor-performance-ov .student-list td {
+    padding: 12px;
+    text-align: left;
+}
+
+#instructor-performance-ov .student-list th {
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+#instructor-performance-ov .student-list td {
+    text-align: center;
+    background-color: #5B4C76;
+    color: white;
+    border: 5px solid #3C2A5D;
+    border-left: none;
+    border-right: none;
+}
+
+/* Student Summary */
+#instructor-performance-ov .student-summary {
+    padding-top: 24px;
+    color: white;
+    text-align: left;
+}
+
+#instructor-performance-ov .bold {
+    font-weight: bold;
+    color: #DA88F9;
+}
+
+#instructor-performance-ov .performance-chart {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .perfomance-container {
+        width: auto;
+        margin: 0 0 55% 22%;
+        padding: 25px;
+    }
+
+    #instructor-performance-ov .quiz-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instructor-performance-ov .quiz-title {
+        font-size: 1.1rem;
+    }
+
+    #instructor-performance-ov .date-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instructor-performance-ov .date-wrapper .image {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    #instructor-performance-ov .due-date, #instructor-performance-ov .course-code {
+        font-size: 14px;
+    }
+
+    #instructor-performance-ov .performance-overview {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instructor-performance-ov .performance-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #instructor-performance-ov .chart {
+        width: 100%;
+    }
+
+    #instructor-performance-ov #performanceChart {
+        width: 100%;
+        height: auto;
+    }
+
+    #instructor-performance-ov .student-list table {
+        font-size: 14px;
+    }
+
+    #instructor-performance-ov .student-list th, #instructor-performance-ov .student-list td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .perfomance-container {
+        width: 95%;
+        margin: 10% auto;
+        padding: 20px;
+    }
+
+    #instructor-performance-ov .quiz-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instructor-performance-ov .quiz-title {
+        font-size: 1rem;
+    }
+
+    #instructor-performance-ov .date-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instructor-performance-ov .date-wrapper .image {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    #instructor-performance-ov .due-date, #instructor-performance-ov .course-code {
+        font-size: 13px;
+    }
+
+    #instructor-performance-ov .performance-overview {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #instructor-performance-ov .performance-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #instructor-performance-ov .chart {
+        width: 100%;
+    }
+
+    #instructor-performance-ov #performanceChart {
+        width: 100%;
+        height: auto;
+    }
+
+    #instructor-performance-ov .student-list table {
+        font-size: 13px;
+    }
+
+    #instructor-performance-ov .student-list th, #instructor-performance-ov .student-list td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfomance-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        margin-top: 10%;
+    }
+
+    #instructor-performance-ov .quiz-title {
+        font-size: 0.875rem;
+    }
+
+    #instructor-performance-ov .due-date, #instructor-performance-ov .course-code {
+        font-size: 12px;
+    }
+
+    #instructor-performance-ov .student-list table {
+        font-size: 12px;
+    }
+
+    #instructor-performance-ov .student-list th, #instructor-performance-ov .student-list td {
+        padding: 5px;
+    }
+
+    #instructor-performance-ov #performanceChart {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Desktop Specific Styles */
+@media (min-width: 1025px) {
+    #instructor-performance-ov #performanceChart {
+        width: 600px;
+        height: 400px;
+    }
+}

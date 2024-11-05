@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0 0 5% 0;
+  background-color: hsl(0, 0%, 100%);
+  overflow-x: hidden;
+}
+
+#create-class .create-class-container {
+  width: 800px;
+  padding: 15px 30px 30px;
+  height: auto;
+  border: 1px solid #DA88F9;
+  border-radius: 25px;
+  margin: -6% 0 0 25%;
+  background-color: #3C2A5D;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.104);
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#create-class input[type="text"], 
+#create-class textarea, 
+#create-class .form-control {
+  width: 95%;
+  padding: 10px;
+  margin: 1.5% 20px;
+  border: 1px solid #DA88F9;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff00;
+  color: #DA88F9;
+}
+
+#create-class ::-ms-input-placeholder { 
+  color: #DA88F9 !important;
+}
+#create-class .remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#create-class h1 {
+  text-align: start;
+  margin: 1% 0 7% 28%;
+  padding: 0 0 10px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  color: #000000;
+}
+
+#create-class .form-group label {
+  display: flex;
+  margin: 5px 3%;
+  font-weight: 550;
+  text-align: start;
+  color: #f1f1f1;
+}
+
+#create-class .btn-group {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+#create-class .btn, .center-btn {
+  width: 45%;
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: left;
+  margin: 0 3% 3%;
+  display: flex;
+  align-items: center;
+}
+
+#create-class .btn-primary {
+  background-color: #DA88F9;
+  color: #fff;
+}
+
+#create-class .btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #DA88F9;
+  color: #DA88F9;
+}
+
+#create-class .btn:hover {
+  background-color: #B76AD4;
+}
+
+#create-class .btn-primary:hover {
+  background-color: #B76AD4;
+}
+
+#create-class .btn-outline-primary:hover {
+  background-color: #DA88F9;
+  color: #fff;
+}
+
+#create-class button.btn.btn-primary {
+  align-self: flex-start;
+}
+
+#create-class .center-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 190px;
+  background-color: #7E57C2;
+  color: #fff;
+}
+
+#create-class .center-btn:hover {
+  background-color: #5e39a7;
+}
+
+#create-class .form-group ::-webkit-input-placeholder { /* Chrome, Safari, Opera */
+  color: #BA68C8 !important;
+}
+
+#create-class .form-group ::-moz-placeholder { /* Firefox 19+ */
+  color: #BA68C8 !important;
+}
+
+#create-class .form-group :-ms-input-placeholder { /* IE 10+ */
+  color: #BA68C8 !important;
+}
+
+#create-class .form-group ::-ms-input-placeholder { /* Edge 12-18 */
+  color: #BA68C8 !important;
+}
+
+.form-group ::placeholder { /* Modern browsers */
+  color: #BA68C8 !important;
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.btn-subtext {
+  font-size: 0.8em;
+  color: #ffffff;
+}
+.btn-selected {
+  font-size: 1em;
+}
+
+#create-class .selected-students{
+  display: flex;
+  flex-direction: column;
+  margin: 1% 0 2% 3%;
+align-items: start;
+}
+#create-class .selected-student{
+  display: flex;
+  margin: 1% 0;
+  
+} 
+
+
+@media (max-width: 1024px) {
+  #create-class .create-class-container {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  #create-class h1 {
+    margin: 1% 0 7% 0;
+    text-align: center;
+  }
+  #create-class input[type="text"], 
+  #create-class textarea, 
+  #create-class .form-control {
+    
+    margin: 1.5% 2.5%;
+  }
+  
+  #create-class .btn, .center-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #create-class .center-btn {
+    margin: 0 auto;
+  }
+
+  
+  
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0 0 15% 0 !important;
+    background-color: hsl(0, 0%, 100%);
+    overflow-x: hidden;
+  }
+  #create-class .create-class-container {
+    width: 95%;
+    margin:5% 0 10% auto;
+    padding: 25px;
+    height: auto;
+  }
+
+  #create-class h1 {
+    margin: 50px 0 0 0;
+    font-size: 22px;
+  }
+
+  #create-class .btn, .center-btn {
+    width: 95%;
+    margin:  0;
+  }
+
+  #create-class .center-btn {
+    margin: 0 auto;
+  }
+
+  #create-class .btn-group {
+    flex-direction: column;
+      margin: 0;  
+  }
+
+  #create-class .btn-primary {
+   margin: 2%;
+  }
+  
+  #create-class .btn-outline-primary {
+    margin: 2%;
+
+  }
+  
+}
+
+@media (max-width: 480px) {
+  #create-class .create-class-container {
+    width: 100%;
+    margin: 0% 0% 1px 1px;
+    height: auto;
+    padding: 0 15px 15px 15px;
+  }
+
+  #create-class h1 {
+    margin: 5% 1%;
+    font-size: 18px;
+  }
+
+  #create-class .btn, .center-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #create-class .center-btn {
+    margin: 0 auto;
+  }
+}

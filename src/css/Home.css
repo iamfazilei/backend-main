@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+#home-user.main-content {
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  box-sizing: border-box;
+  padding: auto;
+}
+#home-user body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  overflow-y: hidden !important; 
+}
+
+#home-user .container {
+  display: flex;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#home-user .colored {
+  color: #BA68C8;
+}
+
+#home-user .main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+#home-user .welcome-card {
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+  border: solid 1px transparent;
+  border-radius: 10px;
+  height: 12rem;
+  background: linear-gradient(90deg, rgba(60,41,92,1) 0%, rgba(126,87,194,1) 100%);
+}
+
+#home-user .welcome-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
+#home-user .welcome-title .name {
+  margin: 0;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px; 
+  margin-top: 20px;
+}
+
+#home-user .card {
+  position: relative; 
+}
+
+.card-title, 
+.card-description {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.card-description {
+  font-weight: normal;
+}
+
+#home-user .card-image {
+  width: 100%; 
+  height: 50%; 
+}
+
+#home-user .card-content {
+  padding: 9rem 1rem 1rem 1rem; 
+  background-color: hsl(262, 47%, 55%);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: hsl(0, 0%, 100%);
+}
+
+#home-user .card-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#home-user .card-text {
+  padding-top: 10px;
+  font-size: 12px;
+  display: flex; 
+  align-items: center;
+}
+
+#home-user .icon-image {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 8px;
+}
+
+#home-user .card:hover {
+  transform: scale(1.05); 
+}
+
+#home-user .see-more-btn {
+  background-color: hsl(262, 47%, 55%);
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 50px 88% 0 0;
+  transition: background-color 0.2s;
+}
+
+#home-user .see-more-btn:hover {
+  background-color: hsl(262, 39%, 45%);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #home-user .container {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    
+  }
+  /* #home-user .container {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 25rem;
+
+  } */
+
+ 
+#home-user .main-card {
+ 
+  width:auto;
+  padding: 5%;
+  margin: 5% 0 0 0;
+  background: rgb(60,41,92);
+}
+
+#home-user .welcome-title {
+  font-size: 25px;
+  text-align: start;
+  font-weight: bold;
+  justify-content: left!important;
+  color: hsl(0, 0%, 100%);
+}
+
+#home-user .welcome-title .name {
+  margin: 0 3%;
+  width: 110%;
+}
+
+#home-user .see-more-btn {
+  width:20%;
+  margin: 5% 0 15% 0 !important;
+  padding: 2;
+}
+
+
+#home-user .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:auto;
+  max-width: 75rem !important; 
+  height: 100%; 
+  margin: 0;
+  /* padding: 0 15px;  */
+  box-sizing: border-box; 
+}
+
+#home-user .card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  width: 14rem !important;
+  height: 10rem !important;
+  box-sizing: border-box; 
+
+  padding: 1rem 1rem 1rem 9.5rem; 
+
+}
+
+#home-user .card-image-container {
+
+  border-radius: 25px 0 0 25px;
+  max-width: 35rem;
+  flex: 1;
+  height:100%;
+  width: 120px;
+  margin-right: 10px;
+  font-size: 35px;
+  padding: 45px 0 0 0;
+}
+
+#home-user .card-title {
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+
+#home-user .card-text {
+  padding-top: 10px;
+  font-size: 12px;
+  display: flex; 
+  align-items: center;
+}
+
+#home-user .icon-image {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 8px;
+}
+
+#home-user .card:hover {
+  transform: scale(1.05); 
+}
+
+
+}
+
+ @media (max-width: 425px) {
+  #home-user .card {
+    width:auto;
+
+  }
+ 
+    #home-user .card-image-container {
+
+      border-radius: 25px 0 0 25px;
+      max-width: 35rem;
+      flex: 1;
+      height:100%;
+      width: 30%;
+      max-width: 30%;
+      margin-right: 10px;
+      font-size: 35px;
+      padding: 12% 0 0 0;
+    
+  }
+}
+
+  
+
